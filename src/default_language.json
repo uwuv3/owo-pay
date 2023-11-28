@@ -1,0 +1,23 @@
+{
+  "text.nothing": "Yok",
+  "text.select_buy_item": "Almak istediğin eşyayı seç",
+  "text.buyed": "*Satın alındı*",
+  "error.no_v14": "Bunu açabilmen için v14 kullanman gerekli",
+  "error.no_item": "Markette eşya yok",
+  "error.invalid_client": "INVALID_CLIENT_PROVIDED: Geçersiz discord clienti sunuldu",
+  "error.invalid_user": "INVALID_USER_PROVIDED: Geçersiz kullanıcı sunuldu",
+  "error.invalid_message": "INVALID_MESSAGE_PROVIDED: Geçersiz mesaj sunuldu",
+  "error.invalid_number": "INVALID_NUMBER_PROVIDED: Geçersiz sayı sunuldu",
+  "error.invalid_string": "INVALID_STRING_PROVIDED: Geçersiz yazı sunuldu",
+  "error.fail_item": "Eşya bilgisi alınamadı",
+  "error.now_buying": "Şu anda `{itemName}` adlı eşyayı alıyorsun",
+  "embed.title.error": "Hata",
+  "embed.title.user_info": "Kullanıcı Bilgi Sistemi",
+  "embed.title.buy_item": "Satın alma işlemi",
+  "embed.title.buy_item_started": "Satın alma işlemi başladı",
+  "embed.buy_item": "Aşağıdan istediğin eşyayı seçebilirsin",
+  "embed.user_info": "> **Kullanıcı**: <@{userID}> `({userID})`\n> **Artan Para**: {artanPara}\n> **Şuan satın alınan**: {nowBuying}\n> **Borcu**: {gerekenPara}\n> **Satın alınanlar**: {buyed}",
+  "embed.buy_item_started": "Bilgiler şu şekildedir\n**İsim**: {itemName}\n**Atılacak fiyat**: {price}\n**Kime atılacak**: <@{sendUserID}>",
+  "embed.footer.buy_item_started": "Yanlış kişiye gönderilen para bizim sorumluluğumuzun altında değildir",
+  "embed.footer.default": "__uwu.v3"
+}
