@@ -1,17 +1,17 @@
-const { Client, Message } = require("discord.js");
-
+const Eris = require("eris");
 class SendOwO {
   /**
    *
-   * @param {Client} client
+   * @param {Eris.Client} client
    * @param {RegExp} data
-   * @param {Message} message
+   * @param {Eris.Message} message
    */
-  constructor(client, data, message) {
+  constructor(client, data, message, oldMessage) {
     this.client = client;
     this.message = message;
+    this.oldMessage = oldMessage;
     this.channel = message?.channel;
-    this.guild = message?.guild;
+    this.guildID = message?.guildID;
     this.data = data;
     this.sender = data[1] || undefined;
     this.receiver = data[6] || undefined;

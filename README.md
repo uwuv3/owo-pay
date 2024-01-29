@@ -2,19 +2,15 @@
 
 ## Geçmiş
 1.0.3
+- Eris için destek eklendi
+
+1.0.3
 - Çoklu versiyon sistemi eklendi.
 - Birçok function kaldırıldı.
 
 1.0.2
 - Dil sistemi eklendi!
 
-1.0.1.8
-- addCash functionunda client verisi kalktı
-- addCash eventindeki hata kalktı
-
-1.0.1
-- addCash functionu eklendi
-- Teknik hatalar düzeltildi
 
 ## Nasıl kullanılır
 

@@ -7,11 +7,12 @@ class SendOwO {
    * @param {RegExp} data
    * @param {Message} message
    */
-  constructor(client, data, message) {
+  constructor(client, data, message,oldMessage) {
     this.client = client;
     this.message = message;
+    this.oldMessage = oldMessage;
     this.channel = message?.channel;
-    this.guild = message?.guild;
+    this.guild = message?.guild?.id
     this.data = data;
     this.sender = data[1] || undefined;
     this.receiver = data[6] || undefined;

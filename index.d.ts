@@ -1,5 +1,6 @@
+import EventEmitter from "events";
 import sendOwO from "./Classes/sendOwo";
-declare class OwOpay {
+declare class OwOpay extends EventEmitter {
   constructor(client: any);
   client: any;
   on(event: "error", listener: (data: string) => void): this;

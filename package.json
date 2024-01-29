@@ -1,9 +1,9 @@
 {
   "name": "@uwuv3/owo-pay",
   "private": false,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hazır bir OwO Pay modülüdür",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish --access=public && exit 1"
@@ -14,6 +14,7 @@
   "author": "uwuv3",
   "license": "MIT",
   "dependencies": {
+    "eris": "^0.17.2",
     "events": "^3.3.0",
     "fs": "^0.0.1-security",
     "uuid": "^9.0.1"

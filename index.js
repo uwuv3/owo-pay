@@ -134,30 +134,43 @@ module.exports = class OwOpay extends EventEmitter {
           discordVersion = parseInt(discordVersion[0] + discordVersion[1]);
           let moduleFunction;
           if (discordVersion == 12) {
-            moduleFunction = "./v12/";
+            moduleFunction = "./versions/DiscordJS/v12/";
           } else if (discordVersion == 13) {
-            moduleFunction = "./v13/";
+            moduleFunction = "./versions/DiscordJS/v13/";
           } else if (discordVersion == 14) {
-            moduleFunction = "./v14/";
+            moduleFunction = "./versions/DiscordJS/v14/";
           } else {
             return undefined;
           }
           return moduleFunction;
         } catch (error) {
-          console.log(error);
           return undefined;
         }
       });
-    if (!discordVersion) {
-      this.emit("error", this.getLanguage("error.unsupportedversion"));
-    } else {
+    this.moduleFunction = discordVersion;
+
+    if (!this.moduleFunction) {
+      const erisVersion = await import("eris")
+        .catch((x) => undefined)
+        .then(async function (eris) {
+          try {
+            return "./versions/Eris/";
+          } catch (error) {
+            console.log(error);
+            return undefined;
+          }
+        });
+      this.moduleFunction = erisVersion;
+    }
+    if (this.moduleFunction) {
       this.emit("debug", "Loading module");
-      this.moduleFunction = discordVersion;
       this.moduleFunction = require(this.moduleFunction + "index.js").bind(
         null,
         this
       );
       this.moduleFunction();
     }
+    if (!this.moduleFunction)
+      this.emit("error", this.getLanguage("error.unsupportedversion"));
   }
 };
