@@ -1,0 +1,9 @@
+{
+  "error.unsupportedversion": "[OWO PAY] Desteklenmeyen sürüm kullanılıyor, lütfen desteklenen sürümü kullanın.",
+  "error.loadedDefaultLanguage": "[OWO PAY] Dil konfigurasyonunu okurken hata çıktı, varsayılan konfigurasyon yüklendi.",
+  "error.resetCash": "[OWO PAY] Para konfigurasyonunu okurken hata çıktı, sıfırlanıyor.",
+  "error.noClient": "[OWO PAY] Client Belirtilmedi ya da yanlış Client adandı.",
+  "error.noString": "[OWO PAY] String Belirtilmedi ya da yanlış String adandı.",
+  "error.noNumber": "[OWO PAY] Number Belirtilmedi ya da yanlış Number adandı.",
+  "error.invalidUser": "[OWO PAY] Geçersiz kullanıcı sunuldu."
+}

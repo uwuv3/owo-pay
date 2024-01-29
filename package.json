@@ -13,10 +13,8 @@
   "author": "uwuv3",
   "license": "MIT",
   "dependencies": {
-    "croxydb": "^0.0.22",
+    "events": "^3.3.0",
     "fs": "^0.0.1-security",
-    "ms": "^2.1.3",
-    "path": "^0.12.7",
     "uuid": "^9.0.1"
   }
 }
