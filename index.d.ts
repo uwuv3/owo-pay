@@ -1,8 +1,7 @@
-import { Client } from "discord.js";
 import sendOwO from "./Classes/sendOwo";
-class OwOpay {
-  constructor(client: Client | any);
-  client: Client;
+declare class OwOpay {
+  constructor(client: any);
+  client: any;
   on(event: "error", listener: (data: string) => void): this;
   on(event: "debug", listener: (data: string) => void): this;
   on(event: "moduleLoaded", listener: (data: string) => void): this;
@@ -10,7 +9,7 @@ class OwOpay {
   /**
    * Required Action
    */
-  async loadModule(): void;
+  loadModule(): Promise<void>;
   /**
    * Gets language value from language.json
    */
@@ -18,18 +17,18 @@ class OwOpay {
   /**
    * Adds cash to cash.json
    */
-  async addCash(user: string, number: number): boolean;
+  addCash(user: string, number: number): Promise<boolean>;
   /**
    * Removes cash to cash.json
    */
-  async removeCash(user: string, number: number): boolean;
+  removeCash(user: string, number: number): Promise<boolean>;
   /**
    * Sets cash to cash.json
    */
-  async setCash(user: string, number: number): boolean;
+  setCash(user: string, number: number): Promise<boolean>;
   /**
    * Gets cash to cash.json
    */
-  async getCash(user: string, number: number): number;
+  getCash(user: string, number: number): Promise<number>;
 }
 export = OwOpay;

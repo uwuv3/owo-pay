@@ -1,11 +1,12 @@
 {
   "name": "@uwuv3/owo-pay",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hazır bir OwO Pay modülüdür",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access=public && exit 1"
   },
   "keywords": [
     "owo-pay"
